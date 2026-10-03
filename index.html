@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interactive Class 7 lesson: Plants as Energy Transducers">
+<title>Plants as Energy Transducers | Class 7 Interactive Lesson</title>
+<style>
+:root{--bg:#071b14;--card:#10291f;--card2:#153728;--text:#f1fff7;--muted:#b8d8c6;--green:#5ee68a;--lime:#b8f36b;--yellow:#ffd45c;--blue:#70c8ff;--pink:#ff8fb3;--shadow:0 18px 50px #0007}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 15% 10%,#1b5637 0,#071b14 35%,#04110c 100%);color:var(--text);line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#ffffff18 1px,transparent 1px);background-size:28px 28px;animation:drift 18s linear infinite;z-index:-1}
+@keyframes drift{to{background-position:140px 100px}}
+header{min-height:88vh;display:grid;place-items:center;text-align:center;padding:50px 20px;position:relative;overflow:hidden}
+.hero{max-width:1050px}.badge{display:inline-block;padding:8px 14px;border:1px solid #ffffff28;border-radius:999px;background:#ffffff10;color:var(--lime)}
+h1{font-size:clamp(2.5rem,7vw,6rem);line-height:1.02;margin:20px 0;background:linear-gradient(90deg,#fff,var(--lime),var(--blue));-webkit-background-clip:text;color:transparent}
+h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15}h3{color:var(--lime)}
+p{color:var(--muted)}.lead{font-size:1.2rem;max-width:800px;margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#06160fcc;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18;display:flex;gap:8px;overflow:auto;padding:10px}
+nav a{color:#dfffea;text-decoration:none;padding:8px 12px;border-radius:10px;white-space:nowrap}nav a:hover{background:#ffffff12}
+main{max-width:1150px;margin:auto;padding:25px 18px 80px}.section{margin:70px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#10291fee,#0a2018ee);border:1px solid #ffffff15;border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.big{padding:32px}.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:#5ee68a18;color:var(--green);font-size:.85rem}
+.diagram{background:#06140e;border-radius:22px;padding:20px;margin:20px 0;border:1px solid #ffffff12;overflow:hidden}
+svg{max-width:100%;height:auto}.label{font-weight:700}.flow{animation:flow 1.8s linear infinite}@keyframes flow{to{stroke-dashoffset:-28}}
+button{border:0;border-radius:12px;padding:11px 16px;background:var(--green);color:#062012;font-weight:800;cursor:pointer;margin:5px}button.secondary{background:#ffffff14;color:#fff;border:1px solid #ffffff20}button:hover{transform:translateY(-1px)}
+.callout{border-left:4px solid var(--yellow);background:#ffd45c0e;padding:15px 18px;border-radius:12px}.warning{border-left-color:var(--pink);background:#ff8fb30e}
+.steps{counter-reset:s}.step{position:relative;padding-left:52px;margin:18px 0}.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#062012;font-weight:900}
+.meter{height:18px;background:#ffffff12;border-radius:99px;overflow:hidden}.meter span{display:block;height:100%;width:50%;background:linear-gradient(90deg,var(--green),var(--yellow));transition:.5s}
+.quiz-option{display:block;width:100%;text-align:left;background:#ffffff0d;color:#fff;border:1px solid #ffffff15}.quiz-option.correct{outline:2px solid var(--green)}.quiz-option.wrong{outline:2px solid var(--pink)}
+footer{text-align:center;padding:45px 20px;color:#9fc0ae;border-top:1px solid #ffffff12}
+.small{font-size:.9rem;color:#9fc0ae}.formula{font-size:1.25rem;text-align:center;padding:18px;border-radius:16px;background:#0005;color:#fff}
+.reveal{display:none;margin-top:12px}.reveal.show{display:block}
+@media(max-width:600px){header{min-height:78vh}.card{padding:17px}.big{padding:20px}}
+</style>
+</head>
+<body>
+<header id="top">
+<div class="hero">
+<span class="badge">CLASS 7 • SCIENCE • PRACTICAL LEARNING</span>
+<h1>Plants as Energy Transducers</h1>
+<p class="lead">Explore how a green plant captures energy from sunlight and transforms it into chemical energy stored in food. Learn with diagrams, animations, experiments and interactive activities.</p>
+<p>☀️ Light → 🍃 Leaf → 🍬 Chemical energy → 🌱 Growth & life</p>
+<a href="#start"><button>Start Learning</button></a>
+</div>
+</header>
+
+<nav>
+<a href="#start">Start</a><a href="#energy">Energy</a><a href="#transducer">Transducer</a><a href="#leaf">Leaf</a><a href="#photo">Photosynthesis</a><a href="#water">Water</a><a href="#gases">Gases</a><a href="#glucose">Glucose</a><a href="#experiments">Experiments</a><a href="#quiz">Quiz</a>
+</nav>
+
+<main>
+<section class="section" id="start">
+<span class="tag">01 • Big idea</span><h2>What are we learning?</h2>
+<div class="card big">
+<p>Plants need energy just like animals do. The unusual thing is that green plants can capture energy from sunlight and use it to make energy-rich food. This makes plants important <b>energy transducers</b>: they transform one form of energy into another form that cells can store and use.</p>
+<div class="formula">☀️ Light energy + CO₂ + H₂O → 🍬 Glucose + O₂</div>
+<div class="callout"><b>Remember:</b> The energy is not “created from nothing”. Light energy is converted and stored mainly as chemical energy in molecules such as glucose.</div>
+</div>
+</section>
+
+<section class="section" id="energy">
+<span class="tag">02 • Energy</span><h2>Why do living things need energy?</h2>
+<div class="grid">
+<div class="card"><h3>Growth</h3><p>Cells need energy to build new materials and increase in size.</p></div>
+<div class="card"><h3>Repair</h3><p>Organisms use energy to replace or repair damaged structures.</p></div>
+<div class="card"><h3>Movement & transport</h3><p>Cells spend energy moving substances and, in animals, muscles.</p></div>
+<div class="card"><h3>Life processes</h3><p>Energy supports chemical reactions needed to keep cells alive.</p></div>
+</div>
+<div class="diagram">
+<svg viewBox="0 0 900 260" role="img" aria-label="Energy flow from sun to plant">
+<circle cx="100" cy="100" r="55" fill="#ffd45c"/><g stroke="#ffd45c" stroke-width="8"><line x1="100" y1="25" x2="100" y2="0"/><line x1="25" y1="100" x2="0" y2="100"/><line x1="153" y1="47" x2="177" y2="23"/><line x1="47" y1="47" x2="23" y2="23"/></g>
+<text x="65" y="190" fill="white" font-size="22">Sun</text>
+<path d="M180 100 H390" stroke="#ffd45c" stroke-width="10" stroke-dasharray="18 10" class="flow"/><polygon points="390,100 360,82 360,118" fill="#ffd45c"/>
+<text x="225" y="75" fill="#ffd45c" font-size="20">light energy</text>
+<rect x="430" y="40" width="150" height="130" rx="30" fill="#174d32" stroke="#5ee68a" stroke-width="5"/><ellipse cx="505" cy="105" rx="45" ry="70" fill="#5ee68a" transform="rotate(-25 505 105)"/><text x="463" y="205" fill="white" font-size="22">Plant</text>
+<path d="M590 100 H820" stroke="#b8f36b" stroke-width="10" stroke-dasharray="18 10" class="flow"/><polygon points="820,100 790,82 790,118" fill="#b8f36b"/>
+<text x="640" y="75" fill="#b8f36b" font-size="20">chemical energy</text>
+<rect x="685" y="125" width="105" height="55" rx="15" fill="#b8f36b"/><text x="710" y="160" fill="#123" font-size="20">Food</text>
+</svg>
+</div>
+</section>
+
+<section class="section" id="transducer">
+<span class="tag">03 • Key word</span><h2>What does “energy transducer” mean?</h2>
+<div class="card big">
+<p>A <b>transducer</b> is something that changes energy or information from one form into another. A green plant performs a biological energy conversion:</p>
+<div class="grid">
+<div class="card"><h3>Input</h3><p>☀️ Radiant/light energy from sunlight</p></div>
+<div class="card"><h3>Converter</h3><p>🍃 Chlorophyll-containing cells in the plant use light energy to drive photosynthesis.</p></div>
+<div class="card"><h3>Output</h3><p>🍬 Chemical energy stored in organic molecules, especially glucose and later starch and other compounds.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="leaf">
+<span class="tag">04 • Meet the leaf</span><h2>The leaf is a natural solar-energy collector</h2>
+<p>Look at a leaf. Its shape, green pigment, veins and tiny pores all help it perform its jobs.</p>
+<div class="diagram">
+<svg viewBox="0 0 900 500" role="img" aria-label="Labeled leaf diagram">
+<path d="M450 430 C220 410 160 220 450 70 C740 220 680 410 450 430Z" fill="#2d8c50" stroke="#b8f36b" stroke-width="7"/>
+<path d="M450 420 Q450 250 450 90" stroke="#d8f3df" stroke-width="9" fill="none"/>
+<g stroke="#d8f3df" stroke-width="4"><path d="M450 330 Q330 270 240 235"/><path d="M450 300 Q570 235 660 205"/><path d="M450 250 Q350 185 315 160"/><path d="M450 225 Q550 170 600 145"/></g>
+<g fill="#fff" font-size="22"><text x="50" y="120">Leaf blade</text><line x1="180" y1="115" x2="285" y2="150" stroke="#fff" stroke-width="2"/><text x="650" y="95">Veins</text><line x1="640" y1="105" x2="565" y2="150" stroke="#fff" stroke-width="2"/><text x="45" y="360">Chlorophyll</text><line x1="180" y1="350" x2="310" y2="310" stroke="#fff" stroke-width="2"/><text x="610" y="380">Stomata*</text><text x="570" y="410" font-size="15">tiny gas-exchange pores</text></g>
+</svg>
+</div>
+<div class="grid">
+<div class="card"><h3>Chlorophyll</h3><p>The green pigment absorbs light energy. It is found in chloroplasts of plant cells.</p></div>
+<div class="card"><h3>Stomata</h3><p>Tiny openings, often on the lower surface of leaves, allow gases to move into and out of the leaf.</p></div>
+<div class="card"><h3>Veins</h3><p>Vascular tissues help transport water and dissolved minerals to the leaf and move sugars/organic products away.</p></div>
+<div class="card"><h3>Broad surface</h3><p>A broad leaf can expose a large area to light, while its internal tissues provide cells where photosynthesis occurs.</p></div>
+</div>
+<p class="small">*The number and location of stomata vary among plant species and environmental conditions.</p>
+</section>
+
+<section class="section" id="photo">
+<span class="tag">05 • Main process</span><h2>Photosynthesis: step by step</h2>
+<div class="steps">
+<div class="step"><h3>Roots take in water</h3><p>Root hairs increase the contact area with soil. Water enters the roots and is transported upward through xylem.</p></div>
+<div class="step"><h3>Carbon dioxide enters the leaf</h3><p>CO₂ from the air can enter through stomata and diffuse into the internal leaf tissues.</p></div>
+<div class="step"><h3>Chlorophyll absorbs light</h3><p>Chlorophyll captures suitable wavelengths of light. This supplies energy for photosynthetic reactions.</p></div>
+<div class="step"><h3>Carbon is incorporated into sugars</h3><p>Photosynthetic reactions use carbon dioxide and water-derived components to build energy-rich organic molecules. Glucose is a useful simplified way to represent the food produced.</p></div>
+<div class="step"><h3>Oxygen is released</h3><p>Oxygen is produced from water during the light-dependent reactions and can leave the leaf through stomata.</p></div>
+</div>
+<div class="diagram">
+<svg viewBox="0 0 900 440">
+<rect x="70" y="280" width="760" height="120" fill="#5b3823" rx="25"/><path d="M450 340 V170" stroke="#c5a27b" stroke-width="18"/>
+<path d="M450 180 C300 20 150 130 230 230 C290 305 385 260 450 180 C515 260 610 305 670 230 C750 130 600 20 450 180Z" fill="#2f9956" stroke="#b8f36b" stroke-width="6"/>
+<circle cx="160" cy="55" r="38" fill="#ffd45c"/><path d="M200 75 L350 130" stroke="#ffd45c" stroke-width="12" stroke-dasharray="16 9" class="flow"/>
+<text x="115" y="125" fill="white" font-size="20">Sunlight</text>
+<path d="M110 300 H300" stroke="#70c8ff" stroke-width="10" stroke-dasharray="15 8" class="flow"/><text x="90" y="350" fill="#70c8ff" font-size="20">water → roots</text>
+<path d="M770 170 H570" stroke="#fff" stroke-width="8" stroke-dasharray="15 8" class="flow"/><text x="675" y="145" fill="white" font-size="20">CO₂</text>
+<path d="M570 230 H790" stroke="#70e69a" stroke-width="8" stroke-dasharray="15 8" class="flow"/><text x="650" y="265" fill="#70e69a" font-size="20">O₂ out</text>
+<text x="360" y="405" fill="#b8f36b" font-size="22">glucose / organic food</text>
+</svg>
+</div>
+</section>
+
+<section class="section" id="water">
+<span class="tag">06 • Water pathway</span><h2>How does water reach the leaf?</h2>
+<div class="card big">
+<p>Water in the soil is absorbed mainly by root hairs. It travels through the plant's xylem toward stems and leaves. The continuous movement is supported by physical processes including transpiration.</p>
+<div class="diagram"><svg viewBox="0 0 850 300">
+<rect x="0" y="210" width="850" height="90" fill="#6a422a"/><path d="M425 270 V120" stroke="#70c8ff" stroke-width="25"/>
+<path d="M425 130 C330 10 170 90 220 170 C270 240 360 200 425 130 C490 200 580 240 630 170 C680 90 520 10 425 130Z" fill="#2f9956" stroke="#b8f36b" stroke-width="5"/>
+<g fill="#70c8ff"><circle cx="425" cy="245" r="9"/><circle cx="425" cy="205" r="9"/><circle cx="425" cy="165" r="9"/></g>
+<path d="M425 245 V155" stroke="#70c8ff" stroke-width="6" stroke-dasharray="12 8" class="flow"/>
+<text x="25" y="255" fill="white" font-size="20">soil water</text><text x="470" y="270" fill="#70c8ff" font-size="20">xylem</text><text x="570" y="90" fill="#b8f36b" font-size="20">leaf</text>
+</svg></div>
+</div>
+</section>
+
+<section class="section" id="gases">
+<span class="tag">07 • Gas exchange</span><h2>CO₂ in, O₂ out</h2>
+<div class="grid">
+<div class="card"><h3>Carbon dioxide</h3><p>CO₂ is a raw material for photosynthesis. It enters the leaf from the surrounding air, mainly through stomata.</p></div>
+<div class="card"><h3>Oxygen</h3><p>O₂ is generated during photosynthetic light reactions and may diffuse out through stomata.</p></div>
+<div class="card"><h3>Stomata are adjustable</h3><p>Guard cells control the opening of stomata, helping regulate gas exchange and water loss.</p></div>
+</div>
+</section>
+
+<section class="section" id="glucose">
+<span class="tag">08 • Where the energy goes</span><h2>What happens to the food made by the plant?</h2>
+<div class="grid">
+<div class="card"><h3>Immediate use</h3><p>Some products are used in cellular respiration and other metabolic processes.</p></div>
+<div class="card"><h3>Storage</h3><p>Plants can convert glucose into starch for storage. Seeds, roots, stems and fruits can contain stored chemical energy.</p></div>
+<div class="card"><h3>Growth</h3><p>Carbon from sugars can become cellulose and other substances used to build plant tissues.</p></div>
+<div class="card"><h3>Transport</h3><p>Plants move soluble sugars through phloem to places where they are needed or stored.</p></div>
+</div>
+<div class="callout"><b>Important distinction:</b> Photosynthesis stores captured light energy in chemical form. Cellular respiration releases usable energy from organic molecules. Plants perform respiration too.</div>
+</section>
+
+<section class="section">
+<span class="tag">09 • Interactive simulation</span><h2>Change the conditions</h2>
+<div class="card big">
+<p>Move the controls and predict what happens to the rate of photosynthesis. This is a simplified learning model, not a precise biological calculator.</p>
+<label>☀️ Light: <b id="lightVal">70</b>%</label><input id="light" type="range" min="0" max="100" value="70" style="width:100%">
+<label>🌬️ CO₂: <b id="co2Val">70</b>%</label><input id="co2" type="range" min="0" max="100" value="70" style="width:100%">
+<label>💧 Water availability: <b id="waterVal">80</b>%</label><input id="water" type="range" min="0" max="100" value="80" style="width:100%">
+<p>Modelled photosynthesis level:</p><div class="meter"><span id="rate"></span></div><h3 id="rateText">Good conditions</h3>
+</div>
+</section>
+
+<section class="section" id="experiments">
+<span class="tag">10 • Practical learning</span><h2>Experiments & observations</h2>
+<div class="grid">
+<div class="card"><h3>Experiment 1: Starch in a leaf</h3><p><b>Idea:</b> Photosynthesis can produce sugars that are converted to starch for storage.</p><p><b>Observation:</b> In the standard iodine test, areas containing starch turn blue-black.</p><p class="small">Use a supervised school-lab procedure. Iodine solution and hot water/alcohol steps require adult/teacher supervision.</p></div>
+<div class="card"><h3>Experiment 2: Light matters</h3><p>Compare a leaf area exposed to light with a suitable shaded area, then test for starch using a supervised classroom method.</p><p><b>Question:</b> Which area should have more evidence of starch formation after sufficient time?</p></div>
+<div class="card"><h3>Experiment 3: Observe stomata</h3><p>With a teacher's microscope activity, observe a leaf impression or prepared slide. Look for tiny pores and pairs of guard cells.</p></div>
+<div class="card"><h3>Experiment 4: Track water movement</h3><p>Place a leafy stem in colored water under supervision. Observe color moving through vascular tissues over time. This demonstrates movement of water through the stem, not photosynthesis itself.</p></div>
+</div>
+<div class="card big"><h3>Think like a scientist</h3><div class="steps">
+<div class="step"><b>Predict:</b> What do you think will happen?</div>
+<div class="step"><b>Observe:</b> Record only what you actually see.</div>
+<div class="step"><b>Explain:</b> Connect the observation to the biology.</div>
+<div class="step"><b>Question:</b> What variable could you change in a follow-up experiment?</div>
+</div></div>
+</section>
+
+<section class="section">
+<span class="tag">11 • Quick revision</span><h2>One-page concept map</h2>
+<div class="diagram">
+<svg viewBox="0 0 900 500">
+<g font-family="Arial" text-anchor="middle">
+<rect x="330" y="190" width="240" height="100" rx="25" fill="#2f9956" stroke="#b8f36b" stroke-width="5"/><text x="450" y="230" fill="white" font-size="28">GREEN PLANT</text><text x="450" y="265" fill="#dfffea" font-size="18">energy transducer</text>
+<rect x="45" y="40" width="190" height="80" rx="18" fill="#6b5315"/><text x="140" y="88" fill="white" font-size="22">☀️ Light</text>
+<rect x="665" y="40" width="190" height="80" rx="18" fill="#164d68"/><text x="760" y="88" fill="white" font-size="22">CO₂ + H₂O</text>
+<rect x="55" y="365" width="190" height="80" rx="18" fill="#66551a"/><text x="150" y="413" fill="white" font-size="22">🍬 Glucose</text>
+<rect x="655" y="365" width="190" height="80" rx="18" fill="#174d32"/><text x="750" y="413" fill="white" font-size="22">O₂ + growth</text>
+<path d="M235 100 L350 205 M665 100 L550 205 M245 405 L350 275 M655 405 L550 275" stroke="#b8f36b" stroke-width="7" stroke-dasharray="14 8" class="flow"/>
+</g></svg>
+</div>
+</section>
+
+<section class="section" id="quiz">
+<span class="tag">12 • Check yourself</span><h2>Interactive quiz</h2>
+<div id="quizBox" class="card big"></div>
+</section>
+</main>
+
+<footer>
+<p><b>Plants as Energy Transducers</b> • Class 7 Interactive Science</p>
+<p>This educational page is designed for learning and revision. Scientific details are simplified where appropriate for the level.</p>
+</footer>
+
+<script>
+const ids=["light","co2","water"];
+function updateSim(){
+ const l=+light.value,c=+co2.value,w=+water.value;
+ lightVal.textContent=l;co2Val.textContent=c;waterVal.textContent=w;
+ const r=Math.round(Math.min(l,c,w)*0.75+Math.max(0,100-Math.abs(l-c))*0.1);
+ rate.style.width=Math.max(2,Math.min(100,r))+"%";
+ rateText.textContent=r<25?"Very limited conditions":r<50?"Limited conditions":r<75?"Moderate conditions":"Good conditions";
+}
+ids.forEach(x=>document.getElementById(x).addEventListener("input",updateSim)); updateSim();
+
+const questions=[
+{q:"Why are green plants called energy transducers in this lesson?",o:["They convert light energy into stored chemical energy.","They create energy from nothing.","They convert oxygen into sunlight.","They only store water."],a:0,e:"Plants capture light energy and use photosynthesis to form energy-rich organic molecules."},
+{q:"Which substance enters a leaf from the air as a raw material for photosynthesis?",o:["Carbon dioxide","Oxygen only","Starch","Cellulose"],a:0,e:"Carbon dioxide supplies carbon used to build organic molecules during photosynthesis."},
+{q:"Which tissue mainly carries water upward from roots?",o:["Xylem","Phloem","Epidermis","Stoma"],a:0,e:"Xylem transports water and dissolved minerals through the plant."},
+{q:"What is chlorophyll's important role?",o:["Absorbing light energy","Making soil water","Opening every root hair","Storing all oxygen"],a:0,e:"Chlorophyll is the green pigment that absorbs light used to drive photosynthetic reactions."},
+{q:"What gas is produced during the light-dependent reactions of photosynthesis?",o:["Oxygen","Carbon dioxide","Nitrogen","Hydrogen"],a:0,e:"Oxygen is produced from water during the light-dependent reactions and can be released from leaves."},
+{q:"Which statement about plant respiration is correct?",o:["Plants also respire and use organic molecules to release usable energy.","Plants never respire.","Respiration happens only in roots.","Respiration makes sunlight."],a:0,e:"Plant cells respire too; respiration releases usable energy from organic molecules."}
+];
+let qi=0,score=0;
+function renderQuiz(){
+ const x=questions[qi];
+ quizBox.innerHTML=`<p><b>Question ${qi+1} of ${questions.length}</b></p><h3>${x.q}</h3><div>${x.o.map((v,i)=>`<button class="quiz-option" onclick="answer(${i})">${v}</button>`).join("")}</div><p id="feedback"></p>`;
+}
+function answer(i){
+ const x=questions[qi],bs=document.querySelectorAll(".quiz-option");
+ bs.forEach(b=>b.disabled=true);
+ bs[i].classList.add(i===x.a?"correct":"wrong");
+ if(i===x.a){score++;feedback.innerHTML="✅ "+x.e}else{bs[x.a].classList.add("correct");feedback.innerHTML="❌ "+x.e}
+ const b=document.createElement("button");b.textContent=qi<questions.length-1?"Next question":"Show result";b.onclick=()=>{qi++;if(qi<questions.length)renderQuiz();else showResult()};quizBox.appendChild(b);
+}
+function showResult(){
+ const pct=Math.round(score/questions.length*100);
+ quizBox.innerHTML=`<h3>Quiz complete!</h3><p>You scored <b>${score}/${questions.length}</b> (${pct}%).</p><p>${pct>=80?"Excellent understanding!":pct>=50?"Good start—review the diagrams and experiments once more.":"Go through the lesson again, especially photosynthesis, the leaf, and energy conversion."}</p><button onclick="qi=0;score=0;renderQuiz()">Try again</button>`;
+}
+renderQuiz();
+</script>
+</body>
+</html>
